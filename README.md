@@ -1,36 +1,120 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🏋️ AI Fitness Coach
 
-## Getting Started
+AI Fitness Coach is a full-stack web application that generates **personalized workout plans, diet plans, and motivational tips** using Artificial Intelligence.  
+The application also supports **dark mode, voice narration, and PDF export**, providing a complete and user-friendly fitness planning experience.
 
-First, run the development server:
+---
 
-```bash
+## 🚀 Live Demo
+
+🔗 **Deployed Application:**  
+https://ai-fitness-coach-ashy.vercel.app/
+
+---
+
+## ✨ Key Features
+
+- ✅ AI-generated **Weekly Workout Plan** (day-wise exercises)
+- ✅ Personalized **Diet Plan** (Breakfast, Lunch, Dinner)
+- ✅ Dynamic **Motivation Tips**
+- ✅ **Text-to-Speech** support (Speak, Pause, Resume, Stop)
+- ✅ **Export Fitness Plan as PDF**
+- ✅ **Dark / Light Mode Toggle**
+- ✅ Fully **Responsive UI**
+- ✅ Secure backend API using environment variables
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+- **Next.js (App Router)**
+- **React.js**
+- **Tailwind CSS**
+- **JavaScript / TypeScript**
+
+### Backend
+- **Next.js API Routes**
+- **OpenAI API (GPT-4o-mini)**
+
+### Tools & Libraries
+- **jsPDF** – PDF export
+- **Web Speech API** – Voice narration
+- **Vercel** – Deployment
+- **Git & GitHub** – Version control
+
+---
+
+## ⚙️ Application Flow
+
+1. User enters fitness details:
+   - Name & Age
+   - Fitness Goal
+   - Fitness Level
+   - Workout Location
+   - Diet Preference
+2. Data is sent to the backend API (`/api/generate`)
+3. OpenAI generates:
+   - Weekly workout routine
+   - Diet plan
+   - Motivational tips
+4. User can:
+   - Listen to the plan using voice
+   - Pause / Resume / Stop narration
+   - Export the plan as a PDF
+   - Regenerate a new plan
+
+---
+
+## 🔐 Environment Variables
+
+Create a `.env.local` file in the root directory and add:
+
+```env
+OPENAI_API_KEY=your_openai_api_key
+```
+## 🧑‍💻 Run the Project Locally
+
+ git clone https://github.com/AryanGotiwale/ai-fitness-coach.git </br>
+cd ai-fitness-coach </br>
+npm install </br>
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+### Open in Browser(to run locally)
+http://localhost:3000
+
+## 📁 Project Structure (Simplified)
+
+```text
+ai-fitness-coach/
+├── app/
+│   ├── page.tsx
+│   ├── layout.tsx
+│   ├── globals.css
+│   └── api/
+│       └── generate/
+│           └── route.ts
+├── lib/
+│   └── prompt.ts
+├── public/
+├── tailwind.config.js
+├── postcss.config.mjs
+├── package.json
+└── README.md
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🎯 What I Learned
++ Hands-on experience with Next.js App Router
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
++ Integrating AI APIs in real-world applications
 
-## Learn More
++ Managing UI state, theming, and speech features
 
-To learn more about Next.js, take a look at the following resources:
++ Deploying full-stack applications on Vercel
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 👤 Author
+### Aryan Gotiwale
+🔗 GitHub: https://github.com/AryanGotiwale
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+💼 Aspiring MERN / Full-Stack Developer
