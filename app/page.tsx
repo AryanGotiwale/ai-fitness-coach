@@ -432,11 +432,25 @@ const handleSubmit = () => {
 
         {/* WORKOUT / DIET / MOTIVATION CARDS */}
         {[
-          { title: " Weekly Workout Plan", content: plan.workout_plan.map((d:any)=>(
-            <div key={d.day}>
-              <h3 className="font-semibold">{d.day} ({d.duration})</h3>
-            </div>
-          ))},
+          {
+  title: " Weekly Workout Plan",
+  content: plan.workout_plan.map((d: any) => (
+    <div key={d.day} className="mb-5">
+      <h3 className="font-semibold text-lg">
+        {d.day} ({d.duration})
+      </h3>
+
+      <ul className="list-disc pl-6 mt-2 text-slate-700 dark:text-slate-300">
+        {d.exercises.map((ex: any, i: number) => (
+          <li key={i}>
+            {ex.name} — {ex.sets} × {ex.reps}
+          </li>
+        ))}
+      </ul>
+    </div>
+  ))
+}
+,
           { title: " Diet Plan", content: (
             <>
               <p><b>Breakfast:</b> {plan.diet_plan.breakfast}</p>
