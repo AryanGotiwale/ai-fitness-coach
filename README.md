@@ -8,8 +8,9 @@ The application also supports **dark mode, voice narration, and PDF export**, pr
 ## 🚀 Live Demo
 
 🔗 **Deployed Application:**  
-https://ai-fitnescoach.netlify.app/
-https://ai-fitness-coach-ashy.vercel.app/
+https://ai-fitnescoach.netlify.app/ </br>
+https://ai-fitness-coach-ashy.vercel.app/ 
+
 
 ---
 
